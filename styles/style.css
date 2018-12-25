@@ -1,0 +1,358 @@
+body, html {
+	height: 100%;
+}
+
+.container-fluid {
+	height: 100%;
+	width: 80%;
+	padding-top: 60px;
+}
+
+
+.hero-image {
+   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/hero2.jpg");
+	width: 100%;
+    height: 100%;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 60px;
+}
+
+
+.hero-text {
+    text-align: right;
+    position: relative;
+    top:40%;
+    left: 50%;
+	animation-name: example;
+    animation-duration: 4s;
+    transform: translate(-60%, 40%);
+    color: white;
+}
+
+@keyframes example {
+    from {transform: translate(-60%, -500%);}
+    to {transform: translate(-60%, 40%);}
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+nav {
+	background-image: linear-gradient(0deg, #e84965, #e84965);
+}
+
+.image-flip:hover .backside, .image-flip.hover .backside {
+-webkit-transform: rotateY(0deg);
+-moz-transform: rotateY(0deg);
+-o-transform: rotateY(0deg);
+-ms-transform: rotateY(0deg);
+transform: rotateY(0deg);
+}
+ 
+.image-flip:hover .frontside, .image-flip.hover .frontside {
+-webkit-transform: rotateY(180deg);
+-moz-transform: rotateY(180deg);
+-o-transform: rotateY(180deg);
+transform: rotateY(180deg);
+}
+ 
+.image-flip {
+margin-bottom:200px;
+width: 300px;
+height: 250px;
+}
+ 
+.mainflip {
+-webkit-transition: 1s;
+-webkit-transform-style: preserve-3d;
+-ms-transition: 1s;
+-moz-transition: 1s;
+-moz-transform: perspective(1000px);
+-moz-transform-style: preserve-3d;
+-ms-transform-style: preserve-3d;
+transition: 1s;
+transform-style: preserve-3d;
+position: relative;
+}
+ 
+.frontside, .backside {
+-webkit-backface-visibility: hidden;
+-moz-backface-visibility: hidden;
+-ms-backface-visibility: hidden;
+backface-visibility: hidden;
+-webkit-transition: 1s;
+-webkit-transform-style: preserve-3d;
+-moz-transition: 1s;
+-moz-transform-style: preserve-3d;
+-o-transition: 1s;
+-o-transform-style: preserve-3d;
+-ms-transition: 1s;
+-ms-transform-style: preserve-3d;
+transition: 1s;
+transform-style: preserve-3d;
+position: absolute;
+top: 0;
+left: 0;
+}
+ 
+.frontside {
+-webkit-transform: rotateY(0deg);
+-ms-transform: rotateY(0deg);
+z-index: 2;
+}
+ 
+.backside {
+background: white;
+-webkit-transform: rotateY(-180deg);
+-moz-transform: rotateY(-180deg);
+-o-transform: rotateY(-180deg);
+-ms-transform: rotateY(-180deg);
+transform: rotateY(-180deg);
+}
+ 
+.card, .card-img-top {
+border-radius: 0;
+}
+
+
+.middleborder img {
+	width: auto;
+	height: 30%
+}
+
+.reviewandquotegraphic {
+	padding-bottom: 15px;
+	display: flex;
+}
+
+.middleborder {
+	border-left: 1px solid black;
+}
+
+.reviews{
+	display: inline-block;
+}
+
+#reviews {
+	text-align: center;
+}
+
+.reviewerphotoandbusinessinformation {
+	border-top: 2px solid black;
+	padding-top:20px;
+}
+
+.img-thumbnail{
+	border: 3px solid #e84965;
+}
+
+.smallScreenEnvelopeModal {
+	display: none;	
+}
+
+.reviewImage {
+	height: 200px;
+	width: 200px;
+}
+
+#mobilefloatingmenuitems {
+	display: none;
+}
+
+.footer {
+	background-image: linear-gradient(0deg, #e84965, #e84965);
+	color: white;
+}
+
+#footerlinks {
+	list-style-type: none;
+}
+
+#footerlinks2 {
+	text-align: center;
+	list-style-type: none;
+}
+
+#footerlinks li a{
+	text-align: center;
+	color: white;
+	font-family: 'Kalam', cursive;
+}
+
+h3 {
+	text-align: center;
+}
+
+#copyrights {
+	text-align: center;
+}
+
+.btn {
+	color: black;
+	border: solid 2.5px black;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+.btn:hover {
+	color: black;
+}
+
+#row1socialmedialinksfooter li{
+	display-style: inline;
+}
+
+/*.aboutZapic {
+	border: solid 1px #e84965;
+	background-image: linear-gradient(0deg, #e84965, #e84965);
+	border-radius: 5px; 
+}*/
+
+.contactfootericons{
+	text-align: center;
+}
+
+
+.bigScreenEnvelope {
+	width: 60%; 
+	height: auto; 
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto;	
+}
+
+.secondrowofservices {
+	padding: 15px 0px 15px 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Permanent Marker', cursive;
+}
+
+p {
+	font-family: 'Kalam', cursive;
+}
+
+.card{
+	height:400px;
+}
+
+@media screen and (max-width: 1260px) {
+	.hero-text {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	
+	.reviewandquotegraphic{
+		display:flex;
+		flex-direction: column;
+	}
+	.reviewtext {
+		padding-top:20px;
+		order:2;
+	}
+	.reviewimage {
+		order:1;
+	}
+	.middleborder {
+		 border-bottom:2px solid black;
+		 border-left: none;
+		 padding-bottom: 20px;
+	}
+	
+	.bigscreenonlyform{
+		display: none;
+	}
+	
+	.formintro {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.envelopeimage {
+		order: 2;
+	}
+	
+	.formintrotext {
+		order: 1;
+	}
+	
+	.smallScreenEnvelopeModal {
+		display: unset;	
+		background-color: #FFFFFF;
+	}
+	
+	.btn-primary {
+		border-color: #FFFFFF;
+	}
+	
+	.btn-primary:focus {
+		box-shadow: #FFFFFF !important;
+	}
+	
+	.bigScreenEnvelope {
+		display: none;
+	}
+	
+	#mobilefloatingmenuitems {
+		display: block;
+		position: fixed;
+        top: 80%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+	}
+	
+	#rightmenuitems {
+		display: none;
+	}
+	
+	#secondrowofservices .row{
+		
+	}
+	
+	.locationAndContactFooter {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.locationAndCopyright {
+		order: 3;
+	}
+	
+	.footerSocial {
+		order: 2;
+	}
+	
+	.servicebuttons {
+		padding: 15px 0px 15px 0px;
+	}
+	
+	.secondrowofservices {
+		padding: 0px 0px 0px 0px;
+	}
+	
+	.hero-image {
+	    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/mobileZapicLogo2.png");
+		width: 100%;
+	    height: 110%;
+		background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    position: relative;
+	    padding-top: 60px;
+	}
+	
+}
+
+iframe {
+	width:100%;
+	height: auto;
+}
