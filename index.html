@@ -36,12 +36,12 @@
 				<ul class="navbar-nav mr-auto">
 				
 					<li class="nav-item">
-						<a class="nav-link" href="#homepage" data-toggle="collapse" data-target=".navbar-collapse.show">Home</a>
+						<a class="nav-link" href="#homepage">Home</a>
 					</li>
 										
 										
 					<li class="nav-item">
-						<a class="nav-link" href="#projects" data-toggle="collapse" data-target=".navbar-collapse.show">Projects</a>
+						<a class="nav-link" href="#projects">Projects</a>
 					</li>
 					<!--  
 					<li class="nav-item">
@@ -49,11 +49,11 @@
 					</li>
 					-->				
 					<li class="nav-item">
-						<a class="nav-link" href="#reviews" data-toggle="collapse" data-target=".navbar-collapse.show">Reviews</a>
+						<a class="nav-link" href="#reviews">Reviews</a>
 					</li>
 										
 					<li class="nav-item">
-						<a class="nav-link" href="#contact" data-toggle="collapse" data-target=".navbar-collapse.show">Contact</a>
+						<a class="nav-link" href="#contact">Contact</a>
 					</li>
 					
 				</ul>
@@ -743,6 +743,12 @@
 <script>
 $(document).ready(function(){
 	$(".hero-text").animate({top: '40%'});
+});
+</script>
+
+<script>
+$('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
 });
 </script>
 
