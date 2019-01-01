@@ -4,7 +4,7 @@ $from = '<info@zapic.co.uk>';
 
 $sendTo = '<s.boole@outlook.com>';
 
-$subject 'New Message From Contact Form';
+$subject = 'New Message From Contact Form';
 
 $fields = array('firstName' => 'First Name', 'surname' => 'Surname', 'tel' => 'Telephone', 'email' => 'Email', 'message' => 'Message');
 
