@@ -490,14 +490,16 @@
 </section>
 </div>
 
+
 <div class="bigscreenonlyform">
+<form id="contact-form" method="post" action="scripts/contact.php" role="form">
 <div class="row">
 <section class="col-lg-6 col-md-6 col-sm-12">
 <div class="form-group">
 <div class="field">
  	<label for="example-text-input" class="col-form-label">First Name</label>
   <div>
-    <input class="form-control" type="text" value="First Name" id="example-text-input">
+    <input class="form-control" type="text" value="First Name" name="firstName" id="example-text-input">
   </div>
 </div>
 </div>
@@ -506,7 +508,7 @@
 <div class="field">
  	<label for="example-text-input" class="col-form-label">Surname</label>
   <div>
-    <input class="form-control" type="text" value="Surname" id="example-text-input">
+    <input class="form-control" type="text" value="Surname" name="surname" id="example-text-input">
   </div>
 </div>
 </section>
@@ -517,7 +519,7 @@
 <div class="field">
   <label for="example-tel-input" class="col-form-label">Telephone</label>
   <div>
-    <input class="form-control" type="tel" value="+44..." id="example-tel-input">
+    <input class="form-control" type="tel" value="+44..." name="tel" id="example-tel-input">
   </div>
   </div>
   </div>
@@ -526,7 +528,7 @@
   <div class="field">
  <label for="example-email-input" class="col-form-label">Email</label>
   <div>
-    <input class="form-control" type="email" value="joebloggs@example.com" id="example-email-input">
+    <input class="form-control" type="email" value="joebloggs@example.com" name="email" id="example-email-input">
   </div>
 </div>
 </section>
@@ -537,7 +539,7 @@
 <div class="field">
 <label for="exampleTextarea" class="col-form-label">Message</label>
 <div>
-    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+    <textarea class="form-control" name="message" id="exampleTextarea" rows="3"></textarea>
 </div>
 </div>
 </div>
@@ -550,8 +552,8 @@
   </button>
  </div>
 </div>
+</form>
 </div>
-
 </section>
 </div>
 </div>
@@ -561,31 +563,31 @@
 
 
 <div class="row footer locationAndContactFooter">
-<article class="col-lg-4 col-md-4 col-sm-12 footerlinks">
-	<ul id="footerlinks">
-					<li><h3>Links</h3></li>
-					<li class="nav-item active">
+<article class="col-lg-4 col-md-4 col-sm-12">
+	<div id="footerlinks">
+					<h3>Links</h3>
+					
 						<a class="nav-link" href="#homepage">Home</a>
-					</li>
+					
 										
 										
-					<li class="nav-item">
+					
 						<a class="nav-link" href="#projects">Projects</a>
-					</li>
+					
 							
-					<li class="nav-item">
+					
 						<a class="nav-link" href="#reviews">Reviews</a>
-					</li>			
+							
 										
-					<li class="nav-item">
+					
 						<a class="nav-link" href="#contact">Contact</a>
-					</li>
+					
 					<!--  
 					<li class="nav-item">
 						<a class="nav-link" href="#blog">Blog</a>
 					</li>
 					-->
-	</ul>
+	</div>
 </article>
 
 <article class="col-lg-4 col-md-4 col-sm-12 locationAndCopyright">
