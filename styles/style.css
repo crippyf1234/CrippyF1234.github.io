@@ -350,6 +350,18 @@ p {
 	    padding-top: 60px;
 	}
 	
+	.footerlinks {
+		margin-top: 15px;
+	}
+	
+	.footerSocial {
+		margin-bottom: 15px;
+	}
+	
+	.messageAboveEnvelope {
+			text-align: center;
+	}
+	
 }
 
 iframe {
