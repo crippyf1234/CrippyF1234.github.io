@@ -304,7 +304,7 @@ p {
 	#mobilefloatingmenuitems {
 		display: block;
 		position: fixed;
-        top: 80%;
+        bottom: 20%;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
