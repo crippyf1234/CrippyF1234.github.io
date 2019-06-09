@@ -246,7 +246,7 @@ p {
     left: 50%;
 	animation-name: example;
     animation-duration: 4s;
-    transform: translate(0%, 160%);
+    transform: translate(-60%, 160%);
     color: white;
 }
 }
