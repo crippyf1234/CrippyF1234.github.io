@@ -238,11 +238,11 @@ p {
 	height:400px;
 }
 
-@media screen and (max-width: 1260px) {
+/*@media screen and (max-width: 1260px) {
 	.hero-text {
 		display: none;
 	}
-}
+}*/
 
 @media screen and (max-width: 767px) {
 	
