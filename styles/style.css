@@ -238,11 +238,18 @@ p {
 	height:400px;
 }
 
-/*@media screen and (max-width: 1260px) {
+@media screen and (max-width: 1260px) {
 	.hero-text {
-		display: none;
-	}
-}*/
+    text-align: right;
+    position: relative;
+    top:40%;
+    left: 50%;
+	animation-name: example;
+    animation-duration: 4s;
+    transform: translate(0%, 200%);
+    color: white;
+}
+}
 
 @media screen and (max-width: 767px) {
 	
